@@ -285,3 +285,25 @@
 # q2 = int(input())
 # m = abs(p1-q1)+abs(p2-q2)
 # print(m)
+# 
+# 
+# # TODO 20 Три города
+# Даны названия трех городов. Напишите программу, которая определяет самое короткое и самое длинное название города.
+# 
+# c1 = input()
+c2 = input()
+c3 = input()
+mini = min(len(c1), len(c2), len(c3))
+maxi = max(len(c1), len(c2), len(c3))
+if mini == len(c1) and maxi == len(c2):
+    print(c1, c2, sep='\n')
+elif mini == len(c1) and maxi == len(c3):
+    print(c1, c3, sep='\n')
+elif mini == len(c2) and maxi == len(c1):
+    print(c2, c1, sep='\n')  
+elif mini == len(c2) and maxi == len(c3):
+    print(c2, c3, sep='\n')
+elif mini == len(c3) and maxi == len(c1):
+    print(c3, c1, sep='\n')
+elif mini == len(c3) and maxi == len(c2):
+    print(c3, c2, sep='\n')
